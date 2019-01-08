@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Defalut -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="育児休業給付金の計算アプリ">
+  </head>
+
+  <body>
+    <header>
+      <img src="img/ikukyu_title.png" width="90%" alt="育休画面のタイトル画像" id="ikukyu_title">
+    </header>
+
+    <section class="section1">
+      <h2>１．直近の賃金を入力</h2>
+      <p>注意：賃金支払基礎日数が11日以上の月が対象です</p>
+      <nav>
+        <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000130583.html" target="_blank">
+          【参考】厚生労働省：育児・介護休業法について
+        </a>
+      </nav>
+      <form>
+        <p class="px">
+          <label for="one">1か月目：</label>
+          <input id="one" name="one" type="number" placeholder="1か月目の賃金を入力">
+        </p>
+        <p class="px">
+          <label for="two">2か月目：</label>
+          <input id="two" type="number" placeholder="2か月目の賃金を入力">
+        </p>
+        <p class="px">
+          <label for="three">3か月目：</label>
+          <input id="three" type="number" placeholder="3か月目の賃金を入力">
+        </p>
+        <p class="px">
+          <label for="four">4か月目：</label>
+          <input id="four" type="number" placeholder="4か月目の賃金を入力">
+        </p>
+        <p class="px">
+          <label for="five">5か月目：</label>
+          <input id="five" type="number" placeholder="5か月目の賃金を入力">
+        </p>
+        <p class="px">
+          <label for="six">6か月目：</label>
+          <input id="six" type="number" placeholder="6か月目の賃金を入力">
+        </p>
+        <p>
+          <div id="btn" class="disabled">計算</div>
+        </p>
+      </form>
+    </section>
+
+    <section class="section2">
+      <h2>２．入力賃金からの支給額<span class="supText">※</span></h2>
+      <p>育児休業給付金のひと月の支給額は…</p>
+      <p>
+        <label for="">育休取得から6か月以内：</label>
+      </p>
+      <p id="result_half">ここに結果を表示します。</p>
+      <p>
+        <label for="">育休取得から6か月以降：</label>
+      </p>
+      <p id="result_year">ここに結果を表示します。</p>
+    </section>
+
+    <section class="section3">
+      <p class="proviso">
+        ※計算結果の金額と実際の支給額には差が生じる可能性があります。<br>参考程度にお考え下さい。
+      </p>
+    </section>
+
+    <!-- JavaScrip -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* start画面のCSS */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(255, 179, 191);
+}
+
+#title {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: block;  
+}
+
+#money {
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+}
+
+#start {
+  width: 200px;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid #aa5500;
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}

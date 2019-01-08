@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* footerのCSS */
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+
+#appversion{
+  margin: 0;
+  margin-right: 5px;
+}
+
+#copyright {
+  margin: 0 5px 5px 0;
+}
