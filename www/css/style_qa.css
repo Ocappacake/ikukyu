@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body , html {
+  height: 100%;
+  background-color: rgb(255, 179, 191);
+}
+
+/* section_qa */
+.section_qa {
+  margin-top: 10px;
+  background-color: #fff;
+  border: 5px solid #55aaaa;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+dl { 
+  margin-top: 0;
+  width: 95%
+}

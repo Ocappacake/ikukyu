@@ -19,10 +19,6 @@ body , html {
   border: 5px solid #55aaaa;
 }
 
-a {
-  text-decoration: none;
-}
-
 .section1 h2 {
   margin: 10px 5px 0;
 }
@@ -33,8 +29,9 @@ a {
   margin-left: 5px;
 }
 
-.section1 nav a {
+.section1 nav {
   font-size: 15px;
+  margin: 10px 0 10px 10px;
 }
 
 .px {
@@ -57,6 +54,7 @@ a {
   background-color: #fff;
   border: 5px solid #55aaaa;
 }
+
 .section2 h2 {
   margin: 10px 5px 0;
 }
