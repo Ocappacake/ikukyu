@@ -12,6 +12,24 @@
     <meta name="description" content="育児休業給付金計算アプリ">
     <link rel="stylesheet" href="css/style_index.css">
     <link rel="stylesheet" href="css/footer.css">
+
+    <!-- add js-->
+    <script type="text/javascript">
+      var nend_params = {"media":59156,"site":315435,"spot":932277,"type":1,"oriented":3};
+      //広告をタップするとそのままリンク先を開いてしまうことがありますので、その対策を記述
+      window.addEventListener('load', function() {
+        var nend_links = document.querySelectorAll('.nend_wrapper a');
+        for(var i = 0; i < nend_links.length; i+=1){
+          (function() {
+            var href = nend_links[i].href;
+            nend_links[i].href = "#";
+            nend_links[i].onclick = function(){window.open(href); return false;}
+          })();
+        }
+      });
+    </script>
+    <div class="nend_wrapper"><script src="http://js1.nend.net/js/nendAdLoader.js"></script></div>
+
   </head>
 
   <!-- スタート画面 -->
@@ -35,7 +53,7 @@
     </section>
 
     <footer id="footer">
-      <p id="appversion">version:1.1.0</p>
+      <p id="appversion">version:2.0.0</p>
       <p id="copyright">&copy; ocappacake</p>
     </footer>
   </body>

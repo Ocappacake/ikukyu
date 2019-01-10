@@ -12,6 +12,24 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style_ikukyu.css">
     <meta name="description" content="育児休業給付金の計算アプリ">
+
+    <!-- add js-->
+    <script type="text/javascript">
+      var nend_params = {"media":59156,"site":315435,"spot":932277,"type":1,"oriented":3};
+      //広告をタップするとそのままリンク先を開いてしまうことがありますので、その対策を記述
+      window.addEventListener('load', function() {
+        var nend_links = document.querySelectorAll('.nend_wrapper a');
+        for(var i = 0; i < nend_links.length; i+=1){
+          (function() {
+            var href = nend_links[i].href;
+            nend_links[i].href = "#";
+            nend_links[i].onclick = function(){window.open(href); return false;}
+          })();
+        }
+      });
+    </script>
+    <div class="nend_wrapper"><script src="http://js1.nend.net/js/nendAdLoader.js"></script></div>
+
   </head>
 
   <body>
@@ -83,6 +101,7 @@
 
     <!-- JavaScrip -->
     <script src="js/main.js"></script>
+
 
   </body>
 </html>

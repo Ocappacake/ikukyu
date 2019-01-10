@@ -7,6 +7,10 @@ body, html {
   background-color: rgb(255, 179, 191);
 }
 
+.nend_wrapper {
+  margin-top: 10px;
+}
+
 #title {
   margin: 0 auto;
   margin-top: 40px;
