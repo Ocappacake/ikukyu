@@ -2,38 +2,20 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-
-    <!-- Defalut -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <script src="components/loader.js"></script>
+    <script type="text/javascript" src="js/ad.js"></script>
     <link rel="stylesheet" href="components/loader.css">
 
     <meta name="description" content="育児休業給付金計算アプリ">
     <link rel="stylesheet" href="css/style_index.css">
     <link rel="stylesheet" href="css/footer.css">
-
-    <!-- add js-->
-    <script type="text/javascript">
-      var nend_params = {"media":59156,"site":315435,"spot":932277,"type":1,"oriented":3};
-      //広告をタップするとそのままリンク先を開いてしまうことがありますので、その対策を記述
-      window.addEventListener('load', function() {
-        var nend_links = document.querySelectorAll('.nend_wrapper a');
-        for(var i = 0; i < nend_links.length; i+=1){
-          (function() {
-            var href = nend_links[i].href;
-            nend_links[i].href = "#";
-            nend_links[i].onclick = function(){window.open(href); return false;}
-          })();
-        }
-      });
-    </script>
-    <div class="nend_wrapper"><script src="http://js1.nend.net/js/nendAdLoader.js"></script></div>
-
   </head>
 
-  <!-- スタート画面 -->
   <body>
+    <div class="nend_wrapper"><script src="http://js1.nend.net/js/nendAdLoader.js"></script></div>
+
     <header id="header">
       <img src="img/title.png" width="90%" alt="タイトル画像" id="title">
     </header>
@@ -53,7 +35,7 @@
     </section>
 
     <footer id="footer">
-      <p id="appversion">version:2.0.0</p>
+      <p id="appversion">version:2.0.1</p>
       <p id="copyright">&copy; ocappacake</p>
     </footer>
   </body>

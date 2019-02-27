@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,31 +6,15 @@
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <link rel="stylesheet" href="components/loader.css">
     <script src="components/loader.js"></script>
+    <script type="text/javascript" src="js/ad.js"></script>
 
-    <!-- CSS -->
+    <meta name="description" content="育児休業給付金計算アプリ">
     <link rel="stylesheet" href="css/style_qa.css">
-    <meta name="description" content="育児休業給付金の計算アプリ">
-
-    <!-- add js-->
-    <script type="text/javascript">
-      var nend_params = {"media":59156,"site":315435,"spot":932277,"type":1,"oriented":3};
-      //広告をタップするとそのままリンク先を開いてしまうことがありますので、その対策を記述
-      window.addEventListener('load', function() {
-        var nend_links = document.querySelectorAll('.nend_wrapper a');
-        for(var i = 0; i < nend_links.length; i+=1){
-          (function() {
-            var href = nend_links[i].href;
-            nend_links[i].href = "#";
-            nend_links[i].onclick = function(){window.open(href); return false;}
-          })();
-        }
-      });
-    </script>
-    <div class="nend_wrapper"><script src="http://js1.nend.net/js/nendAdLoader.js"></script></div>
-
   </head>
 
   <body>
+    <div class="nend_wrapper"><script src="http://js1.nend.net/js/nendAdLoader.js"></script></div>
+
     <section class="section_qa">
       <h2>よくある質問</h2>
       <dl>
